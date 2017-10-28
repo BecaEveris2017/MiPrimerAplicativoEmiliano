@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   name = 'Emiliano Ramirez Lugo';
-  colores = ['negro', 'rojo', 'blanco', 'verde']
+  colores = ['negro', 'rojo', 'blanco', 'verde'];
+  showCont:boolean;
+  
 
 agregarColor(color) {
   this.colores.push(color.value);
@@ -16,5 +18,9 @@ agregarColor(color) {
   color.value = '';
   return false;
 }
+
+switchView() {
+ this.showCont = !this.showCont;
+ }
 
 }
