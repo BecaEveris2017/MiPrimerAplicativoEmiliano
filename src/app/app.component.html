@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">  
+<div id="Contenedor" style="text-align:center">  
   <h1>Beca Everis Angular 2017 !</h1>
   <h2>Bienvenido</h2>
   <p>{{name}}!</p>
@@ -17,10 +17,16 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-
-<div class="black">
-  <ul>
-    <li *ngFor="let color of colores">{{color}}</li>
-  </ul>
-
+<div id="bloque">
+  <div class="A">
+    <ul>
+      <li *ngFor="let color of colores">{{color}}</li>
+    </ul>
+  </div>
+  <div class="B">
+      <h3>Agrega un color</h3>
+      <form (submit)="agregarColor(color)">
+       <input style="margin-top:1rem" #color type="text" placeholder={{placeholder}} name="color">
+     </form>
+  </div>
 </div>

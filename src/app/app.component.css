@@ -1,5 +1,15 @@
 .black{
     background-color: #eee;
     color:black;
-
+}
+div .A{
+	width: 200px;
+	padding: 25px 0;
+	margin: 0;
+}
+#bloque{  /*padre*/
+	width: 100%;
+}
+#bloque .A, #bloque .B{  /*hijos*/
+	display: inline-block;
 }

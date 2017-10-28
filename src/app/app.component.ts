@@ -9,4 +9,12 @@ export class AppComponent {
   title = 'app';
   name = 'Emiliano Ramirez Lugo';
   colores = ['negro', 'rojo', 'blanco', 'verde']
+
+agregarColor(color) {
+  this.colores.push(color.value);
+  console.log(color.value);
+  color.value = '';
+  return false;
+}
+
 }
